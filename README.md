@@ -1,5 +1,4 @@
 # django-dual-authentication
-
 This package allows [Django](https://www.djangoproject.com/) to authenticate a user with either a username or an email address. It overrides [Django](https://www.djangoproject.com/) authenticate method, so it should work in almost any case of use, without touch anything else.
 
 Supported Python versions:
@@ -8,7 +7,6 @@ Supported Python versions:
  * Python 3.4
 
 ## Installation
-
 Install it running
 
     pip install git+git://github.com/zeioth/django-dual-authentication.git@master

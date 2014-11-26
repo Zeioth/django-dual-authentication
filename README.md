@@ -20,8 +20,7 @@ And add this line to your settings.py
 Quick and painless, right?
 
 ## Testing
-
- * Clone this repository, open testproject directory, and run syncdb and runserver. 
+ * Clone this repository.
+ * Open testproject directory.
+ * Run syncdb or migrate depending your django version, and runserver.
  * Open http://localhost:8000/admin/ and try to login.
-
-

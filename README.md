@@ -7,7 +7,7 @@ Supported Python versions:
  * Python 3.4
 
 ## Installation
-Install it running
+Run
 
     pip install git+git://github.com/zeioth/django-dual-authentication.git@master
 

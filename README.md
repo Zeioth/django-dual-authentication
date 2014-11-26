@@ -11,7 +11,7 @@ Run
 
     pip install git+git://github.com/zeioth/django-dual-authentication.git@master
 
-And add this line to your settings.py
+Then, add this line to your settings.py
 
     AUTHENTICATION_BACKENDS = ['django-dual-authentication.models.DualAuthentication']
 

@@ -4,8 +4,8 @@ This module allows authentication with either a username or an email address. It
 
 ## Installation
 
-Open your settings.py add this line:
+Add this line to your settings.py
 
     AUTHENTICATION_BACKENDS = ['django-dual-authentication.models.DualAuthentication']
 
-Quick and painless, right?
+Now it's working. Quick and painless, right?

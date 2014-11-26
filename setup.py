@@ -8,7 +8,6 @@ try:
 except (IOError, ImportError):
     description = open('README.md').read()
 
-REQUIREMENTS = [i.strip() for i in open('requirements.txt').readlines()]
 
 setup(
     name='django-dual-authentication',
@@ -18,7 +17,7 @@ setup(
     author='Zeioth',
     description='Allows authentication with either a username or an email address.',
     long_description=description,
-    install_requires=REQUIREMENTS,
+    install_requires='',
     include_package_data=True,
     url='https://github.com/Zeioth/django-dual-authentication',
     classifiers=[

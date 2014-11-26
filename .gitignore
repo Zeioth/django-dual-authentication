@@ -1,0 +1,6 @@
+*.__pycache__/
+*.pyc
+*.egg-info/
+.idea/
+dist/
+testproject/db.sqlite3

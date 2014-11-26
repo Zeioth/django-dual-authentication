@@ -9,11 +9,11 @@ Supported Python versions:
 
 ## Installation
 
-Install it using pip
+Install it running
 
     pip install git+git://github.com/zeioth/django-dual-authentication.git@master
 
-Add this line to your settings.py
+And add this line to your settings.py
 
     AUTHENTICATION_BACKENDS = ['django-dual-authentication.models.DualAuthentication']
 

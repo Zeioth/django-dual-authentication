@@ -1,6 +1,6 @@
 # django-dual-authentication
 
-This package allows [Django](https://www.djangoproject.com/) to authenticate a user with either a username or an email address. It overrides [Django](https://www.djangoproject.com/) authenticate method, so it should work in almost any case of use without touch anything else.
+This package allows [Django](https://www.djangoproject.com/) to authenticate a user with either a username or an email address. It overrides [Django](https://www.djangoproject.com/) authenticate method, so it should work in almost any case of use, without touch anything else.
 
 Supported Python versions:
 
@@ -18,3 +18,10 @@ And add this line to your settings.py
     AUTHENTICATION_BACKENDS = ['django-dual-authentication.models.DualAuthentication']
 
 Quick and painless, right?
+
+## Testing
+
+ * Clone this repository, open testproject directory, and run syncdb and runserver. 
+ * Open http://localhost:8000/admin/ and try to login.
+
+

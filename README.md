@@ -13,7 +13,7 @@ Run
 
 Then, add this line to your settings.py
 
-    AUTHENTICATION_BACKENDS = ['django-dual-authentication.models.DualAuthentication']
+    AUTHENTICATION_BACKENDS = ['django-dual-authentication.backends.DualAuthentication']
 
 Quick and painless, right?
 

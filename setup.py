@@ -11,10 +11,11 @@ except (IOError, ImportError):
 
 setup(
     name='django-dual-authentication',
-    version='0.1.0',
+    version='0.4.0',
     packages=['django-dual-authentication'],
     license='MIT',
     author='Zeioth',
+    author_email='test@gmail.com',
     description='Allows authentication with either a username or an email address.',
     long_description=description,
     install_requires='',
@@ -28,5 +29,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.4',
+        'Topic :: Internet :: WWW/HTTP',
     ]
 )

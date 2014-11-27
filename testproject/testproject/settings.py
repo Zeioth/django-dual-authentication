@@ -40,7 +40,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'testproject.urls'
 TEMPLATE_DIRS = ((os.path.join(BASE_DIR, 'testproject/templates')),)
 WSGI_APPLICATION = 'testproject.wsgi.application'
-AUTHENTICATION_BACKENDS = ['testproject.dual-authentication.models.DualAuthentication']
+AUTHENTICATION_BACKENDS = ['testproject.dual-authentication.backends.DualAuthentication']
 
 
 
@@ -54,3 +54,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+
+
+###############################
+"""      STATIC MEDIA       """
+###############################
+STATIC_URL = '/static/'

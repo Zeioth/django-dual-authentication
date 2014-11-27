@@ -1,6 +1,5 @@
 from django.contrib.auth.backends import ModelBackend
 from django.contrib.auth import get_user_model
-from django.contrib.auth.models import User
 
 
 class DualAuthentication(ModelBackend):
@@ -10,16 +9,18 @@ class DualAuthentication(ModelBackend):
 
     """
     def authenticate(self, username=None, password=None):
-        if '@' in username:
-            kwargs = {'email': username}
-        else:
-            kwargs = {'username': username}
         try:
+            kwargs = {'username': username}
             user = get_user_model().objects.get(**kwargs)
-            if user.check_password(password):
-                return user
-        except User.DoesNotExist:
-            return None
+        except:
+            kwargs = {'email': username}
+            user = get_user_model().objects.get(**kwargs)
+        finally:
+            try:
+                if user.check_password(password):
+                    return user
+            except:
+                return None
 
     def get_user(self, username):
         try:

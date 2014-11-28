@@ -61,4 +61,20 @@ DATABASES = {
 ###############################
 """      STATIC MEDIA       """
 ###############################
+
 STATIC_URL = '/static/'
+
+
+
+
+###############################
+"""   DUAL AUTHENTICATION  """
+###############################
+
+# Options: username, email, both
+# Default: both
+AUTHENTICATION_METHOD = 'both'
+
+# Options: username, email, both, none
+# Default: both
+AUTHENTICATION_CASE_SENSITIVE = 'both'

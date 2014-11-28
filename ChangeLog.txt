@@ -1,0 +1,10 @@
+## Changelog
+
+0.5
+ * New feature: Allow authentication using username, email, or both.
+ * New feature: Enable or disable case sensitive for any authentication method.
+ * Fixed: Bug where users cannot login if exists a username equal to an email address.
+
+0.4
+ * Fixed bug where usernames containing '@' only can login using email.
+ * Fixed testproject.

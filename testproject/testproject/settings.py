@@ -37,10 +37,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+
 ROOT_URLCONF = 'testproject.urls'
 TEMPLATE_DIRS = ((os.path.join(BASE_DIR, 'testproject/templates')),)
 WSGI_APPLICATION = 'testproject.wsgi.application'
-AUTHENTICATION_BACKENDS = ['testproject.dual-authentication.backends.DualAuthentication']
+AUTHENTICATION_BACKENDS = ['django-dual-authentication.backends.DualAuthentication']
 
 
 

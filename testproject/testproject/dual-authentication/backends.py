@@ -44,6 +44,7 @@ class DualAuthentication(ModelBackend):
     """
 
     def authenticate(self, username=None, password=None):
+        UserModel = get_user_model()
         try:
             if ((am == 'email') or (am == 'both')):
                 if ((cs == 'email') or cs == 'both'):
@@ -51,7 +52,7 @@ class DualAuthentication(ModelBackend):
                 else:
                     kwargs = {'email__iexact': username}
 
-                user = get_user_model().objects.get(**kwargs)
+                user = UserModel.objects.get(**kwargs)
             else:
                 raise
         except:
@@ -61,17 +62,21 @@ class DualAuthentication(ModelBackend):
                 else:
                     kwargs = {'username__iexact': username}
 
-                user = get_user_model().objects.get(**kwargs)
+                user = UserModel.objects.get(**kwargs)
         finally:
             try:
                 if user.check_password(password):
                     return user
             except:
+                # Run the default password hasher once to reduce the timing
+                # difference between an existing and a non-existing user.
+                UserModel().set_password(password)
                 return None
 
     def get_user(self, username):
+        UserModel = get_user_model()
         try:
-            return get_user_model().objects.get(pk=username)
-        except get_user_model().DoesNotExist:
+            return UserModel.objects.get(pk=username)
+        except UserModel.DoesNotExist:
             return None
             

@@ -67,6 +67,9 @@ class DualAuthentication(ModelBackend):
                 if user.check_password(password):
                     return user
             except:
+                # Run the default password hasher once to reduce the timing
+                # difference between an existing and a non-existing user.
+                UserModel().set_password(password)
                 return None
 
     def get_user(self, username):

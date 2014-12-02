@@ -29,7 +29,8 @@ Please note that if you combine certain options like ``AUTHENTICATION_METHOD = '
 ## Common issues
 We've been reported about users having problems with MySQL and dual-authentication case sensitive option. This is because [mysql is case-insensitive by default](https://docs.djangoproject.com/en/1.7/ref/databases/#collation-settings). So, if you need case sensitive authentication, probably you'd prefer avoid this database engine. But if you really need MySQL in your life, then you should change the charset collation in order to enable case sensitive checking:
 
-    ALTER TABLE auth_user CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;
+    ALTER TABLE auth_user MODIFY username varchar(30) CHARACTER SET utf8 COLLATE utf8_bin;
+    ALTER TABLE auth_user MODIFY email varchar(75) CHARACTER SET utf8 COLLATE utf8_bin;
 
 ## Testing
  * Clone this repository.

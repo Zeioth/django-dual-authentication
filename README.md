@@ -22,7 +22,7 @@ Quick and painless, right?
 You can define them in your project settings.
 
 * ``AUTHENTICATION_METHOD``: You can choose to authenticate your users by ``'username'``, ``'email'``, or ``'both'``. Default: ``'both'``.
-* ``AUTHENTICATION_CASE_SENSITIVE``: I don't recommend use this option, but it's a requisite of some projects. You can choose ``'username'``, ``'email'``, ``'both'``, ``'none'``. Default: ``'both'``.
+* ``AUTHENTICATION_CASE_SENSITIVE``: You can choose ``'username'``, ``'email'``, ``'both'``, ``'none'``. Default: ``'both'``.
 
 Please note that if you combine certain options like ``AUTHENTICATION_METHOD = 'username'`` and ``AUTHENTICATION_CASE_SENSITIVE = 'none'``, then might be a good idea check if a no case sensitive user already exists, for your registation form's username field. Other way, users having the same username with different capital letters, will not be able to login, for obvious reasons.
 

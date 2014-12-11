@@ -22,7 +22,7 @@ Quick and painless, right?
 * ``AUTHENTICATION_METHOD``: You can authenticate your users by ``'username'``, ``'email'``, ``'both'``. Default: ``'both'``.
 * ``AUTHENTICATION_CASE_SENSITIVE``: You can choose ``'username'``, ``'email'``, ``'both'``, ``'none'``. Default: ``'both'``.
 
-Please note that if you combine certain options like ``AUTHENTICATION_METHOD = 'username'`` and ``AUTHENTICATION_CASE_SENSITIVE = 'both'``, then might be a good idea check if a not case sensitive user already exists, for your registation form's username field. Other way, users having the same username with different capital letters, will not be able to login, for obvious reasons.
+Please note that if you combine certain options like ``AUTHENTICATION_METHOD = 'username'`` and ``AUTHENTICATION_CASE_SENSITIVE = 'username'``, then might be a good idea check if a not case sensitive user already exists, for your registation form's username field. Other way, users having the same username with different capital letters, will not be able to login, for obvious reasons.
 
 ## Common issues
 We've been reported about users having problems with MySQL and dual-authentication case sensitive option. This is because [mysql is case-insensitive by default](https://docs.djangoproject.com/en/1.7/ref/databases/#collation-settings). So, if you need case sensitive authentication, probably you'd prefer avoid this database engine.

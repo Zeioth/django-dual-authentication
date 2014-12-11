@@ -1,5 +1,5 @@
 # django-dual-authentication
-This package allows to authenticate a user with either a username an email address, or both. It overrides [Django](https://www.djangoproject.com/) authenticate method, so it should work in almost any case of use, without touch anything else. Compatible with custom user models.
+This package allows to authenticate a user with either a username an email address, or both. It overrides [Django](https://www.djangoproject.com/) authenticate method, so it should work in almost any case of use, without touch anything else.
 
 Supported versions:
 

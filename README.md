@@ -19,8 +19,6 @@ Quick and painless, right?
 
 ## Settings
 
-You can define them in your project settings.
-
 * ``AUTHENTICATION_METHOD``: You can authenticate your users by ``'username'``, ``'email'``, ``'both'``. Default: ``'both'``.
 * ``AUTHENTICATION_CASE_SENSITIVE``: You can choose ``'username'``, ``'email'``, ``'both'``, ``'none'``. Default: ``'both'``.
 

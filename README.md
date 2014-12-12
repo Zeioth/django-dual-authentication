@@ -27,6 +27,10 @@ Please note that if you combine certain options like ``AUTHENTICATION_METHOD = '
 ## Common issues
 We've been reported about users having problems with MySQL and dual-authentication case sensitive option. This is because [mysql is case-insensitive by default](https://docs.djangoproject.com/en/1.7/ref/databases/#collation-settings). So, if you need case sensitive authentication, probably you'd prefer avoid this database engine.
 
+## How can i help?
+* Report issues
+* Leave a star, so other users know you found this useful.
+
 ## Testing
  * Clone this repository.
  * Open testproject directory.

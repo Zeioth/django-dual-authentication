@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='django-dual-authentication',
-    version='0.5.0',
+    version='1.0.0',
     packages=['django-dual-authentication'],
     license='MIT',
     author='Zeioth',
@@ -16,7 +16,7 @@ setup(
     include_package_data=True,
     url='https://github.com/Zeioth/django-dual-authentication',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

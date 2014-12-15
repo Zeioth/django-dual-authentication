@@ -1,10 +1,12 @@
 `Django-dual-authentication <https://github.com/Zeioth/django-dual-authentication/>`__
 ==========================
-
-.. image:: https://img.shields.io/pypi/v/django-dual-authentication.svg
-    :target:  https://pypi.python.org/pypi/django-dual-authentication/
+.. image:: https://api.travis-ci.org/Zeioth/django-dual-authentication.svg
+    :target: https://travis-ci.org/Zeioth/django-dual-authentication/builds
 
 .. image:: https://img.shields.io/pypi/dm/django-dual-authentication.svg
+    :target:  https://pypi.python.org/pypi/django-dual-authentication/
+    
+.. image:: https://img.shields.io/pypi/v/django-dual-authentication.svg
     :target:  https://pypi.python.org/pypi/django-dual-authentication/
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
@@ -63,10 +65,11 @@ default <https://docs.djangoproject.com/en/1.7/ref/databases/#collation-settings
 So, if you need case sensitive authentication, probably you'd prefer
 avoid this database engine.
 
-How can i help?
+How can i get involved?
 ---------------
 
--  Report issues
+-  Report issues.
+-  Suggest new features.
 -  Leave a star, so other users know you found this useful.
 
 Testing

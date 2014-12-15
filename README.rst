@@ -25,15 +25,11 @@ Supported versions:
 Installation
 ------------
 
-Run
-
-::
+Run::
 
     pip install django-dual-authentication
 
-Then, add this line to your settings.py
-
-::
+Then, add this line to your settings.py::
 
     AUTHENTICATION_BACKENDS = ['django-dual-authentication.backends.DualAuthentication']
 
@@ -47,14 +43,6 @@ Settings
 -  ``AUTHENTICATION_CASE_SENSITIVE``: You can choose ``'username'``,
    ``'email'``, ``'both'``, ``'none'``. Default: ``'both'``.
 
-Please note that if you combine certain options like
-``AUTHENTICATION_METHOD = 'username'`` and
-``AUTHENTICATION_CASE_SENSITIVE = 'username'``, then might be a good
-idea check if a not case sensitive user already exists, for your
-registation form's username field. Other way, users having the same
-username with different capital letters, will not be able to login, for
-obvious reasons.
-
 Common issues
 -------------
 
@@ -64,6 +52,14 @@ case-insensitive by
 default <https://docs.djangoproject.com/en/1.7/ref/databases/#collation-settings>`__.
 So, if you need case sensitive authentication, probably you'd prefer
 avoid this database engine.
+
+Also, note that if you combine certain options like
+``AUTHENTICATION_METHOD = 'username'`` and
+``AUTHENTICATION_CASE_SENSITIVE = 'username'``, then might be a good
+idea check if a not case sensitive user already exists, for your
+registation form's username field. Other way, users having the same
+username with different capital letters, will not be able to login, for
+obvious reasons.
 
 How can i get involved?
 ---------------

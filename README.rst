@@ -61,13 +61,6 @@ registation form's username field. Other way, users having the same
 username with different capital letters, will not be able to login, for
 obvious reasons.
 
-How can i get involved?
----------------
-
--  Report issues.
--  Suggest new features.
--  Leave a star, so other users know you found this useful.
-
 Testing
 -------
 

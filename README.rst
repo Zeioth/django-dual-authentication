@@ -69,3 +69,8 @@ Testing
 -  Run syncdb or migrate depending your django version, and runserver.
 -  Open http://localhost:8000/admin/ and try to login.
 
+Updates
+-----------
+
+-  December 2014: Stable release
+-  December 2015: All it's working fine. No changes.

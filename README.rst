@@ -72,5 +72,5 @@ Testing
 Updates
 -----------
 
--  December 2014: Stable release
--  December 2015: All it's working fine. No changes.
+-  Dec 2014: Stable release
+-  Dec 2015: All it's working fine. No changes.

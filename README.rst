@@ -58,6 +58,8 @@ registation form's username field. Other way, users having the same
 username with different capital letters, will not be able to login, for
 obvious reasons.
 
+Finally, please, note that AUTHENTICATION_CASE_SENSITIVE = 'email' and 'both', are meant for very specific border cases. All email adresses of the internet are case insensitive, so it's recommended to use the values 'none' or 'username'.
+
 Testing
 -------
 

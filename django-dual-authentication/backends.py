@@ -42,8 +42,15 @@ class DualAuthentication(ModelBackend):
     This is a ModelBacked that allows authentication
     with either a username or an email address.
     """
-
-    def authenticate(self, username=None, password=None):
+    
+    if django.VERSION[0] == 1:
+        def authenticate(self, username=None, password=None):
+            return self._authenticate(username, password)
+    else:
+        def authenticate(self, request, username=None, password=None):
+            return self._authenticate(username, password)
+            
+    def _authenticate(self, username=None, password=None):
         UserModel = get_user_model()
         try:
             if ((am == 'email') or (am == 'both')):
@@ -79,4 +86,3 @@ class DualAuthentication(ModelBackend):
             return UserModel.objects.get(pk=username)
         except UserModel.DoesNotExist:
             return None
-            

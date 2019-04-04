@@ -72,3 +72,5 @@ Updates
 -  Dec 2014: Stable release
 -  Dec 2015: All it's working fine. No changes.
 -  Dec 2016: All it's working fine. No changes.
+-  Dec 2017: All it's working fine. No changes.
+-  Dec 2018: All it's working fine. No changes.

@@ -14,7 +14,7 @@ except:
 try:
     cs = settings.AUTHENTICATION_CASE_SENSITIVE
 except:
-    cs = 'none'
+    cs = 'username'
 
 #####################
 """   EXCEPTIONS  """

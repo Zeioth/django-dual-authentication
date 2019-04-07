@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='django-dual-authentication',
-    version='1.0.0',
+    version='1.2.1',
     packages=['django-dual-authentication'],
     license='MIT',
     author='Zeioth',

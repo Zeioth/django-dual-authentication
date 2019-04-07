@@ -1,4 +1,4 @@
-Follow the [official intructions](https://docs.python.org/2/distutils/packageindex.html#pypirc).
+Follow the [official intructions](https://packaging.python.org/tutorials/packaging-projects/).
 
 TROUBLESHOOTING
 ====================

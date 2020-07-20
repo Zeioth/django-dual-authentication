@@ -76,6 +76,6 @@ Updates
 -  Dec 2016: All it's working fine. No changes.
 -  Dec 2017: All it's working fine. No changes.
 -  Dec 2018: All it's working fine. No changes.
--  Apr 2019: Added support for django 2.0+ and Python ~3.7.
+-  Apr 2019: Added support for django 2.0+ and Python 3.7.
 -  Jul 2020: All it's working fine. No changes.
 

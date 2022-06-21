@@ -78,4 +78,6 @@ Updates
 -  Dec 2018: All it's working fine. No changes.
 -  Apr 2019: Added support for django 2.0+ and Python 3.7.
 -  Jul 2020: All it's working fine. No changes.
+-  sep 2021: All it's working fine. No changes.
+-  Jun 2022: All it's working fine. No changes.
 

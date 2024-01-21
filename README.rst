@@ -1,7 +1,5 @@
 `Django-dual-authentication <https://github.com/Zeioth/django-dual-authentication/>`__
 ==========================
-.. image:: https://api.travis-ci.org/Zeioth/django-dual-authentication.svg
-    :target: https://travis-ci.org/Zeioth/django-dual-authentication/builds
     
 .. image:: https://img.shields.io/pypi/v/django-dual-authentication.svg
     :target:  https://pypi.python.org/pypi/django-dual-authentication/
